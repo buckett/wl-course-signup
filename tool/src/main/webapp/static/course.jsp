@@ -181,6 +181,7 @@ pageContext.setAttribute("openCourse", (String)request.getAttribute("openCourse"
 						data.description = Text.toHtml(data.description);
 						data.waiting = waitingList;
 						data.url = courseURL;
+						data.returnurl = "${request.contextPath}/course-signup/static";
 						
 						var parts = [];
 						for (var componentIdx in data.components) {

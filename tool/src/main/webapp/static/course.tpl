@@ -4,10 +4,10 @@
             <div id="summary">
                 <h1>${title}</h1>
                 {if hide}
-                <div class="noAuth">
-					If you are a member of the University of Oxford, please
-					<a class="login" href="dologin.jsp" target="_top">login to WebLearn</a>
-					to see more information.
+                	<div class="noAuth">
+						If you are a member of the University of Oxford, please
+						<a class="login" href="${returnurl}/sethelper.jsp" target="_top">login to WebLearn</a>
+						to see more information.
 					</div>
                 {else}
                 <table width="100%">

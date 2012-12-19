@@ -6,7 +6,7 @@
                 {if hide}
                 	<div class="noAuth">
 						If you are a member of the University of Oxford, please
-						<a class="login" href="${returnurl}/sethelper.jsp" target="_top">login to WebLearn</a>
+						<a class="login" href="/course-signup/rest/login/sethelper?returnUrl=${returnurl}" target="_top">login to WebLearn</a>
 						to see more information.
 					</div>
                 {else}

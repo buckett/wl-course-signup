@@ -3,5 +3,5 @@
 <% 
 	String context = request.getHeader("referer");
 	session.setAttribute(Tool.HELPER_DONE_URL, context);
-	response.sendRedirect("dologin.jsp");
+	response.sendRedirect("/course-signup/rest/course/dologin");
 %>

@@ -38,6 +38,12 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.codehaus.jackson.map.type.TypeFactory;
+import org.sakaiproject.component.cover.ComponentManager;
+import org.sakaiproject.tool.api.ActiveTool;
+import org.sakaiproject.tool.api.ActiveToolManager;
+import org.sakaiproject.tool.api.Session;
+import org.sakaiproject.tool.api.Tool;
+import org.sakaiproject.tool.cover.SessionManager;
 import org.sakaiproject.user.cover.UserDirectoryService;
 
 import uk.ac.ox.oucs.vle.CourseSignupService.Range;

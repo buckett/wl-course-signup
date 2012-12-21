@@ -301,7 +301,9 @@
 					
 						<h3>University Members</h3>
 						<div class="noAuth">
-							<p><a class="login" href="dologin.jsp" target="_top">Login for booking details</a></p>
+							<p>
+							<a class="login" href="/course-signup/rest/login/sethelper?returnUrl=${returnurl}" target="_top">login for booking details</a>
+							</p>
 						</div>
 						<h3>Non-University Members</h3>
 						<p>Non Oxford users cannot be given a username.</p>

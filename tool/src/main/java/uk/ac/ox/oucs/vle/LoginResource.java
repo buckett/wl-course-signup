@@ -36,7 +36,7 @@ public class LoginResource {
 		
 		Session session = SessionManager.getCurrentSession();
 		session.setAttribute(Tool.HELPER_DONE_URL, returnurl);
-		response.sendRedirect("/course-signup/rest/login/dologin");
+		response.sendRedirect(request.getContextPath()+request.getServletPath()+"/login/dologin");
 		return "";
 	} 
 	

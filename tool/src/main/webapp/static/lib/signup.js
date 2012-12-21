@@ -142,6 +142,7 @@ var Signup = function(){
 					data.presenters = [];
 					data.waiting = waitingList;
 					data.url = courseURL;
+					data.returnurl = "/course-signup/rest/course/"+id;
 					
 					var parts = [];
 					var applyTo;

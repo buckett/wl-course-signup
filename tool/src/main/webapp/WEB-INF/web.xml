@@ -72,13 +72,6 @@
 		<dispatcher>FORWARD</dispatcher>
 		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
-	
-	<!-- 
-	<filter-mapping>
-		<filter-name>sakai.request</filter-name>
-		<url-pattern>*.jsp</url-pattern>
-	</filter-mapping>
-	-->
 	 
 	<!-- 
 	<filter-mapping>

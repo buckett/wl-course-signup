@@ -8,7 +8,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://127.0.0.1:3306/test" />
 		<property name="username" value="root"/>
-		<property name="password" value="user"/>
+		<property name="password" value=""/>
 	</bean>
 	
 	<bean id="org.sakaiproject.springframework.orm.hibernate.GlobalSessionFactory" name="sessionFactory"
@@ -30,9 +30,7 @@
 		</property>
 	</bean>
 
-	<bean class="uk.ac.ox.oucs.vle.SampleDataLoader" init-method="init">
-		<property name="sessionFactory" ref="sessionFactory" />
-	</bean>
+
 	
 	<bean id="org.sakaiproject.springframework.orm.hibernate.GlobalTransactionManager" 
 		  name="transactionManager" 

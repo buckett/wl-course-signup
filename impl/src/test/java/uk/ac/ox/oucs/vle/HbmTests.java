@@ -1,6 +1,7 @@
 package uk.ac.ox.oucs.vle;
 
 import org.springframework.test.AbstractTransactionalSpringContextTests;
+import org.springframework.transaction.PlatformTransactionManager;
 
 public class HbmTests extends AbstractTransactionalSpringContextTests{
 
@@ -59,6 +60,10 @@ public class HbmTests extends AbstractTransactionalSpringContextTests{
 		newCourseGroup1.setSource("source");
 		courseDao.save(newCourseGroup1);
 		
+		CourseGroupDAO newCourseGroup = courseDao.newCourseGroup("id1", "Title", "Department", "Subunit");
+		newCourseGroup.setSource("source");
+		courseDao.save(newCourseGroup);
+
 		// Second course group.
 		CourseGroupDAO newCourseGroup2 = courseDao.newCourseGroup("id2", "Title", "Department", "Subunit");
 		newCourseGroup2.setSource("source");

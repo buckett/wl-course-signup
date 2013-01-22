@@ -8,7 +8,9 @@ public class HbmTests extends AbstractTransactionalSpringContextTests{
 
 
 	public void onSetUp() throws Exception {
+		super.onSetUp();
 		courseDao = (CourseDAOImpl) getApplicationContext().getBean("uk.ac.ox.oucs.vle.CourseDAO");
+		
 	}
 	
 

@@ -167,7 +167,7 @@
 			<column name="muid" />
 			<generator class="identity"/>
 		</id>
-		<property name="courseId" type="string" length="255" />
+		<property name="courseId" type="string" length="255" unique="true"/>
 		<property name="title" type="string" length="255" />
 		<property name="dept" type="string" length="32"
 			index="course_group_dept_idx" />
